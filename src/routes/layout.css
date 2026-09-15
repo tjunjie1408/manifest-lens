@@ -1,0 +1,138 @@
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/jetbrains-mono';
+@import 'tailwindcss';
+
+/* shadcn-svelte components use class-based dark mode (.dark on <html>). */
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Raw palette — the single source of truth (see DESIGN.md).
+ * Edit these two blocks to restyle the entire app, light and dark.
+ */
+:root {
+	--canvas: #f6f7f9;
+	--surface: #ffffff;
+	--surface-2: #eef0f3;
+	--divider: #d8dce3;
+	--ink: #191b20;
+	--ink-muted: #626873;
+
+	--primary: #d94f32;
+	--primary-hover: #b93e26;
+	--primary-active: #9e351f;
+	--primary-wash: #fbe9e4;
+	--primary-ink: #ffffff;
+
+	--success: #16a34a;
+	--warning: #a86400;
+	--error: #b42318;
+
+	--run-a: #4656a6;
+	--run-b: #c65a32;
+
+	--radius: 0.625rem; /* 10px, per DESIGN.md */
+}
+
+.dark {
+	--canvas: #0f1216;
+	--surface: #171a20;
+	--surface-2: #1f232b;
+	--divider: #2c313b;
+	--ink: #e6e9ef;
+	--ink-muted: #98a0ad;
+
+	--primary: #ff6a48;
+	--primary-hover: #ff8163;
+	--primary-active: #e2573b;
+	--primary-wash: #3b1d15;
+	--primary-ink: #1a0d09;
+
+	--success: #34d399;
+	--warning: #d6a24a;
+	--error: #e56a60;
+
+	--run-a: #8593db;
+	--run-b: #e2885f;
+}
+
+/*
+ * Token bindings for Tailwind. `@theme inline` emits utilities that reference
+ * the vars above at runtime, so the .dark overrides win without a rebuild.
+ */
+@theme inline {
+	/* DESIGN.md-named utilities (used by the hand-built primitives) */
+	--color-canvas: var(--canvas);
+	--color-surface: var(--surface);
+	--color-surface-2: var(--surface-2);
+	--color-divider: var(--divider);
+	--color-ink: var(--ink);
+	--color-ink-muted: var(--ink-muted);
+	--color-primary: var(--primary);
+	--color-primary-hover: var(--primary-hover);
+	--color-primary-active: var(--primary-active);
+	--color-primary-wash: var(--primary-wash);
+	--color-success: var(--success);
+	--color-warning: var(--warning);
+	--color-error: var(--error);
+	--color-run-a: var(--run-a);
+	--color-run-b: var(--run-b);
+
+	/* shadcn-svelte semantic tokens -> same palette, so shadcn inherits our look */
+	--color-background: var(--canvas);
+	--color-foreground: var(--ink);
+	--color-card: var(--surface);
+	--color-card-foreground: var(--ink);
+	--color-popover: var(--surface);
+	--color-popover-foreground: var(--ink);
+	--color-primary-foreground: var(--primary-ink);
+	--color-secondary: var(--surface-2);
+	--color-secondary-foreground: var(--ink);
+	--color-muted: var(--surface-2);
+	--color-muted-foreground: var(--ink-muted);
+	--color-accent: var(--surface-2);
+	--color-accent-foreground: var(--ink);
+	--color-destructive: var(--error);
+	--color-destructive-foreground: #ffffff;
+	--color-border: var(--divider);
+	--color-input: var(--divider);
+	--color-ring: var(--primary);
+
+	--font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono Variable', ui-monospace, 'Cascadia Code', monospace;
+
+	--radius-card: 10px;
+	--radius-control: 8px;
+	--radius-chip: 6px;
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+	*,
+	::before,
+	::after {
+		border-color: var(--color-divider);
+	}
+
+	html {
+		background-color: var(--color-canvas);
+		color: var(--color-ink);
+		font-family: var(--font-sans);
+		-webkit-font-smoothing: antialiased;
+	}
+
+	/* Data plane: tabular numbers everywhere mono is used, per DESIGN.md */
+	code,
+	kbd,
+	samp,
+	pre,
+	.font-mono {
+		font-feature-settings: 'tnum' 1;
+	}
+
+	a {
+		color: inherit;
+	}
+}
