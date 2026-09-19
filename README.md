@@ -1,111 +1,121 @@
-# Hackathon Starter (SvelteKit full-stack)
+# Manifest Lens
 
-A reusable, competition-agnostic template. One repo, one language (TypeScript),
-one deploy. Clone it, rename it, build the actual product on top.
+An Averis–Monash Hackathon prototype for comparing **Shipping Instructions (SI)** with **draft Bills of Lading (BL)**. Reviewers can inspect source evidence, correct extracted fields, recheck differences, and record a decision with an audit history.
 
-## Stack
+- **Evidence Map** — see which documents and fields need attention.
+- **Review workspace** — compare seven shipping fields alongside the original evidence.
+- **Human review** — confirm results or request information; keep corrections and decisions in PostgreSQL.
 
-- **SvelteKit (full-stack)** — frontend + backend in one app (`+server.ts` API routes, `+page.server.ts` loaders/actions)
-- **Drizzle ORM + SQLite** (`better-sqlite3`) — swap to Postgres by changing `DATABASE_URL` and the driver
-- **Better Auth** — email + password out of the box, session in `locals.user`
-- **Tailwind CSS v4** — utility styling
-- **Zod** — one validation schema shared by client and server
-- **Superforms** — Zod-driven forms: server + client validation, progressive enhancement
-- **adapter-node** — deploy anywhere that runs Node
+Built with SvelteKit, TypeScript, PostgreSQL, and Python. The demo runs locally without paid AI APIs or a hosted LLM.
 
-The visual design lives in `src/routes/layout.css` — edit the `:root` and
-`.dark` palette blocks to restyle the whole app (light and dark). Hand-built
-primitives are in `src/lib/components/ui/` (Button, Input, Card, Badge);
-richer shadcn-svelte components sit alongside them, re-themed to the same tokens.
+## Quick start: Docker
 
-- **Dark mode** — class-based, toggled in the header (`mode-watcher`); all tokens flip.
-- **shadcn-svelte** — Dialog, Alert Dialog, Dropdown Menu, Select, Sonner (toasts), Tooltip, Tabs, Sheet, Command. See the `/components` page. Add more with `npx shadcn-svelte@latest add <name>`.
+**Requirements:** Docker Desktop / Docker Engine with Compose running. Run all commands from the repository root. The first build needs internet access to download images and dependencies; no host Node.js or Python installation is needed.
 
-## The one rule: everything goes through the service seam
+The supplied demo files must be present:
 
-```
-route (+server.ts / +page.server.ts)   ← validate input with a zod schema
-  └─ service (src/lib/server/services/*) ← the ONLY place that touches I/O
-       └─ [ DB | external API | AI provider | Python sidecar ]
+- `sdoc-hackathon-docker/data_v2/inbox/`
+- `sdoc-hackathon-docker/data_v2/attachments/`
+- `worker/reports/experiment-v2/audit.json`
+
+```sh
+docker compose --profile app up --build -d --wait
 ```
 
-Routes never call the db, an SDK, or `fetch` a provider directly. This is what
-keeps the template generic: you can swap the database, or add AI, without
-touching any route or component.
+Open **[Manifest Lens](http://127.0.0.1:3000/shipping/overview)**. On your first visit, register an account with a name, email, and password, then sign in.
 
-## Adding AI later (no architecture change)
+Compose starts PostgreSQL, applies the committed database migrations, and starts the application. Local demo defaults work without creating a `.env` file. Review history persists in the `db-data` volume.
 
-Implement `src/lib/server/services/ai.ts`:
+### Try the demo
 
-- **External API** (OpenAI / Anthropic / hosted model): `fetch` inside `complete()`, key stays server-side via `AI_API_KEY`. Covers ~90% of cases.
-- **Heavy local model / Python libs / GPU**: run a separate Python service and `fetch` it from `complete()`. SvelteKit stays a thin proxy.
+1. Open the **Evidence Map** and filter the cases that need attention.
+2. Select a field or open a case to inspect its email and document evidence.
+3. Correct a field and recheck the comparison.
+4. Record a review decision and inspect the saved history.
 
-Callers use `complete()` either way, so nothing else changes.
+### Manage the containers
 
-## What's already wired
-
-| Block                 | Status                                | Where                                                    |
-| --------------------- | ------------------------------------- | -------------------------------------------------------- |
-| Auth                  | done — email+password, session guard  | `src/lib/server/auth.ts`, `hooks.server.ts`              |
-| DB + example resource | done — `task` table + service         | `src/lib/server/db/`, `src/lib/server/services/tasks.ts` |
-| Shared validation     | done — zod, client+server             | `src/lib/schemas/task.ts`                                |
-| Example REST route    | done — GET/POST, auth-gated           | `src/routes/api/tasks/+server.ts`                        |
-| AI seam               | stub — implement when needed          | `src/lib/server/services/ai.ts`                          |
-| Forms                 | done — Superforms + Zod demo          | `src/routes/+page.server.ts`, `src/routes/+page.svelte`  |
-| UI shell + primitives | done — app shell, Button/Input/Card   | `src/routes/+layout.svelte`, `src/lib/components/ui/`    |
-| Design tokens         | done — edit to restyle everything     | `src/routes/layout.css`                                  |
-| Dark mode             | done — header toggle, all tokens flip | `src/routes/layout.css`, `+layout.svelte`                |
-| shadcn-svelte (9)     | done — Dialog/Select/Sheet/Command…   | `src/lib/components/ui/`, `/components` page             |
-| Deploy                | done — Dockerfile + adapter notes     | `Dockerfile`, `.dockerignore`, README                    |
-
-## Add a new resource (the pattern to copy)
-
-1. Add a table in `src/lib/server/db/schema.ts`, then `npm run db:push`
-2. Copy `src/lib/schemas/task.ts` → your resource's zod schema
-3. Copy `src/lib/server/services/tasks.ts` → your resource's service
-4. Copy `src/routes/api/tasks/+server.ts` → your resource's route (JSON API)
-5. For a user-facing form, copy the Superforms wiring in `+page.server.ts` + `+page.svelte`
-
-## Commands
-
-```bash
-npm run dev          # dev server (http://localhost:5173)
-npm run build        # production build (adapter-node)
-npm run preview      # run the production build locally
-npm run check        # type-check (svelte-check)
-npm run lint         # prettier + eslint
-npm run db:push      # apply schema changes to SQLite
-npm run db:studio    # browse the DB
-npm run auth:schema  # regenerate Better Auth's Drizzle schema
+```sh
+docker compose --profile app ps -a       # Check service status
+docker compose logs app migrate         # Inspect application and migration logs
+docker compose --profile app stop       # Stop services; keep database data
 ```
 
-## First-time setup
+The app and database should be `healthy`. The migration service normally shows `Exited (0)`. Readiness is available at `/api/health`.
 
-```bash
-cp .env.example .env      # then set BETTER_AUTH_SECRET (and ORIGIN in prod)
-npm install
-npm run auth:schema
-npm run db:push
+## Configuration
+
+For custom settings, copy `.env.example` to `.env` and edit it. Keep an existing `.env` if you already have one. Docker defaults are intended for a local demo only.
+
+| Setting                                             | Local development                                                                | Docker Compose                                                                                   |
+| --------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `BETTER_AUTH_SECRET`                                | Set a random secret of at least 32 characters.                                   | Optional override in `.env`; replace the demo secret for any shared deployment.                  |
+| `DATABASE_URL`                                      | Defaults in the example to `postgres://postgres:postgres@localhost:5432/averis`. | Derived from `POSTGRES_*` using the internal `db` hostname; `.env`'s `DATABASE_URL` is not used. |
+| `ORIGIN`                                            | Set to `http://localhost:5173`.                                                  | Fixed to `http://127.0.0.1:3000` in `compose.yaml`.                                              |
+| `SHIPPING_PYTHON`                                   | Optional absolute Python 3.12 executable path; otherwise uses `worker/.venv`.    | Already set to the packaged Python runtime.                                                      |
+| `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB` | Match `DATABASE_URL` if you change these.                                        | Optional `.env` overrides; defaults are `postgres`, `postgres`, and `averis`.                    |
+
+`AI_API_KEY` is not needed for shipping review. Changing `POSTGRES_*` does not update credentials in an already initialized database volume.
+
+To change the Docker site's address, update both the app's `ORIGIN` and port mapping in [compose.yaml](compose.yaml). Editing only `.env`'s `ORIGIN` will not change the Compose configuration.
+
+With Node.js installed, generate an auth secret using:
+
+```sh
+node -e "console.log(require('node:crypto').randomBytes(32).toString('hex'))"
+```
+
+## Local development
+
+**Requirements:** Node.js 22+, Python 3.12, uv, and Docker for PostgreSQL. This setup runs the website outside Docker with live reload.
+
+First, copy the environment template (PowerShell):
+
+```powershell
+Copy-Item .env.example .env
+```
+
+On macOS/Linux, use `cp .env.example .env`. Set `BETTER_AUTH_SECRET` and `ORIGIN=http://localhost:5173`, then run:
+
+```sh
+npm ci --ignore-scripts
+uv sync --frozen --project worker
+docker compose up -d --wait db
+npm run db:migrate
 npm run dev
 ```
 
-The Better Auth demo lives at `/demo/better-auth`.
+Open **[the development site](http://localhost:5173/shipping/overview)** and register an account.
 
-## Deploy
+`uv sync` installs the worker's locked dependencies, including those for batch model evaluation. For website-only development, you can skip that step and set `SHIPPING_PYTHON` to an existing Python 3.12 executable: the review recomputation uses only Python's standard library.
 
-**Docker** (self-host anywhere):
+### Useful commands
 
-```bash
-docker build -t my-app .
-docker run -p 3000:3000 \
-  -e BETTER_AUTH_SECRET=... -e ORIGIN=https://your-domain \
-  -e DATABASE_URL=/data/app.db -v $(pwd)/data:/data \
-  my-app
+```sh
+npm run check          # Svelte and TypeScript checks
+npm run build          # Production website build
+npm run db:generate    # Generate a migration after a schema change
+npm run db:migrate     # Apply committed migrations
 ```
 
-SQLite lives in the mounted volume; run `npm run db:push` once against that DB
-(or generate migrations with `npm run db:generate` and apply them on start).
+## Project structure
 
-**Vercel / Netlify / Cloudflare**: swap the adapter — `npx sv add sveltekit-adapter`
-(pick your platform), and move to a hosted database (e.g. Postgres via Drizzle)
-since serverless has no persistent disk for SQLite.
+| Location                              | Purpose                                                      |
+| ------------------------------------- | ------------------------------------------------------------ |
+| `src/routes/shipping/`                | Page loaders, form actions, and route composition            |
+| `src/lib/components/shipping/`        | Dashboard, queue, review components, and feature styles      |
+| `src/lib/shipping/`                   | Shared types and evidence-map presentation logic             |
+| `src/lib/server/services/shipping.ts` | Evidence loading, Python rechecks, and saved reviews         |
+| `worker/`                             | Python comparison logic and separate batch model experiments |
+| `sdoc-hackathon-docker/`              | Supplied synthetic data and organizer evaluator              |
+| `Dockerfile`, `compose.yaml`          | Application packaging, database, and migrations              |
+
+See the [UI file guide](src/lib/components/shipping/README.md) for where to edit a specific screen, and the [worker guide](worker/README.md) for model setup and batch evaluation. The organizer evaluator is separate and is not required to use the website.
+
+## Demo scope and deployment
+
+The website displays a frozen experiment over **520 synthetic emails** and their supporting attachments. It supports human corrections and rechecks; fresh mailbox ingestion, document uploads, and OCR are not implemented. Dashboard states describe available evidence and review progress, not calibrated model confidence or accuracy on real shipments.
+
+The Docker image includes the evidence files and Python comparison runtime, but excludes model weights and evaluator answer keys. Optional multilingual embedding experiments run separately through the worker.
+
+For cloud hosting, use a container service that supports Node.js, Python subprocesses, and the packaged evidence files, plus persistent PostgreSQL. Configure `DATABASE_URL`, a fresh `BETTER_AUTH_SECRET`, and the public HTTPS `ORIGIN`; run `node scripts/migrate.mjs` before starting `node build`. The current localhost Compose file needs adaptation for public hosting. An edge/serverless adapter is not a drop-in replacement.
