@@ -22,7 +22,7 @@
 	<div class="min-h-screen">
 		<header class="sticky top-0 z-10 border-b border-divider bg-surface/90 backdrop-blur">
 			<div
-				class="mx-auto flex min-h-14 max-w-6xl flex-wrap items-center justify-between gap-4 px-5"
+				class="mx-auto flex min-h-14 w-full max-w-[1600px] flex-wrap items-center justify-between gap-4 px-5 lg:px-8"
 			>
 				<a
 					href={resolve('/shipping/overview')}
@@ -31,10 +31,13 @@
 					Manifest Lens
 				</a>
 
-				<nav aria-label="Main navigation" class="font-mono text-[12px]">
-					<a href={resolve('/shipping/overview')} class={navLink}>Evidence map</a>
-					<a href={resolve('/shipping')} class={navLink}>Review queue</a>
-				</nav>
+				{#if data.user}
+					<nav aria-label="Main navigation" class="font-mono text-[12px]">
+						<a href={resolve('/shipping/overview')} class={navLink}>Evidence map</a>
+						<a href={resolve('/shipping')} class={navLink}>Review queue</a>
+						<a href={resolve('/shipping/guide')} class={navLink}>Review guide</a>
+					</nav>
+				{/if}
 
 				<div class="flex items-center gap-2 font-mono text-[12px]">
 					<button
@@ -60,7 +63,7 @@
 			</div>
 		</header>
 
-		<main class="mx-auto max-w-6xl px-5 py-8">
+		<main class="mx-auto w-full max-w-[1600px] px-5 py-8 lg:px-8">
 			{@render children()}
 		</main>
 	</div>

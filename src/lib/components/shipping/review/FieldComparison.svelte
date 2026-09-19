@@ -34,6 +34,12 @@
 	{#if data.input.category !== 'BL_COMPARISON'}<p class="p-5 text-sm text-ink-muted">
 			This category does not require a document comparison.
 		</p>{/if}
+	{#if data.input.category === 'BL_COMPARISON' && !data.result?.fields}<p
+			class="border-b border-divider bg-warning/5 px-5 py-4 text-sm leading-relaxed text-ink-muted"
+		>
+			Field comparison is unavailable until a readable SI and draft BL are paired. The seven Unknown
+			labels are a safety state, not seven confirmed extraction errors.
+		</p>{/if}
 	{#each groups as group (group.name)}<div class="review-group">
 			<h3 class="bg-surface-2 px-5 py-2.5 text-xs font-semibold tracking-wide">
 				{group.name}
@@ -81,7 +87,7 @@
 										class="review-input"
 										aria-label={`${side.toUpperCase()} ${labels[field]} correction`}
 										name={`value.${key}`}
-										rows="2"
+										rows="3"
 										value={data.input.edits[key]?.value ?? entry?.raw.join(' ') ?? ''}
 									></textarea><input
 										class="review-input mt-2"

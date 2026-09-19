@@ -63,8 +63,9 @@
 	border: 1px solid var(--divider);
 	border-radius: 8px;
 	background: var(--surface);
-	padding: 9px 11px;
-	font-size: 13px;
+	padding: 12px 14px;
+	font-size: 14px;
+	line-height: 1.5;
 }
 .review-input:focus-visible {
 	outline: 2px solid var(--primary);
@@ -148,13 +149,33 @@
 }
 @media (min-width: 1024px) {
 	.review-workspace {
-		grid-template-columns: 280px minmax(0, 1fr);
+		grid-template-columns: minmax(340px, 0.42fr) minmax(0, 1fr);
 	}
 	.review-evidence {
 		position: sticky;
 		top: 80px;
 		max-height: calc(100dvh - 104px);
 		overflow: auto;
+	}
+}
+
+.review-guidance {
+	display: grid;
+	gap: 10px;
+	padding: 16px 18px;
+	border: 1px solid color-mix(in srgb, var(--warning) 28%, var(--divider));
+	border-radius: 12px;
+	background: color-mix(in srgb, var(--warning) 6%, var(--surface));
+}
+
+.review-guide-grid {
+	display: grid;
+	gap: 16px;
+}
+
+@media (min-width: 768px) {
+	.review-guide-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 }
 @media (max-width: 639px) {

@@ -20,6 +20,7 @@ const context = await browser.newContext({
 let testUser;
 let page;
 const email = `shipping-smoke-${randomUUID()}@example.test`;
+const password = randomUUID() + 'aA1!';
 try {
 	page = await context.newPage();
 	const errors = [];
@@ -32,10 +33,20 @@ try {
 	assert.equal(unauth.status(), 401);
 	const signup = await context.request.post('/api/auth/sign-up/email', {
 		headers: { origin: base },
-		data: { name: 'Shipping browser test', email, password: randomUUID() + 'aA1!' }
+		data: { name: 'Shipping browser test', email, password }
 	});
 	assert.equal(signup.status(), 200, await signup.text());
 	testUser = (await signup.json()).user.id;
+	await page.goto('/demo/better-auth');
+	await page.getByRole('button', { name: 'Sign out', exact: true }).click();
+	await page.waitForURL('**/demo/better-auth/login');
+	await page.getByRole('textbox', { name: 'Email', exact: true }).fill(email);
+	await page.locator('input[name="password"]').fill(password + '-wrong');
+	await page.getByRole('button', { name: 'Sign in', exact: true }).click();
+	await page.getByText('Invalid email or password', { exact: true }).waitFor();
+	await page.locator('input[name="password"]').fill(password);
+	await page.getByRole('button', { name: 'Sign in', exact: true }).click();
+	await page.waitForURL('**/shipping/overview');
 
 	await page.goto('/');
 	await page.waitForURL('**/shipping/overview');
@@ -59,7 +70,7 @@ try {
 		(await page.locator('#field-gross_weight_kg details').first().getAttribute('open')) !== null
 	);
 	await page.goto('/shipping');
-	await page.getByRole('heading', { name: 'Shipping Review', exact: true }).waitFor();
+	await page.getByRole('heading', { name: 'Manifest Lens', exact: true }).waitFor();
 	await page.goto('/shipping/email_001');
 	await page.getByText(/View email body/).click();
 	await page.locator('pre').filter({ hasText: 'Attached are the SI and draft BL' }).waitFor();
@@ -135,7 +146,7 @@ try {
 	});
 	await page.setViewportSize({ width: 390, height: 844 });
 	await page.goto('/shipping');
-	await page.getByRole('heading', { name: 'Shipping Review', exact: true }).waitFor();
+	await page.getByRole('heading', { name: 'Manifest Lens', exact: true }).waitFor();
 	await page.evaluate(() => window.scrollTo(0, 0));
 	assert(
 		await page.locator('.review-queue-head').isHidden(),

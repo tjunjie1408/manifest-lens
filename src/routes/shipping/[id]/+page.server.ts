@@ -2,9 +2,8 @@ import { fail, redirect, error } from '@sveltejs/kit';
 import { fields } from '$lib/schemas/shipping';
 import { getReview, applyReview, ReviewError } from '$lib/server/services/shipping';
 import type { Actions, PageServerLoad } from './$types';
-export const load: PageServerLoad = async ({ locals, params, setHeaders }) => {
+export const load: PageServerLoad = async ({ locals, params }) => {
 	if (!locals.user) redirect(303, '/demo/better-auth/login');
-	setHeaders({ 'cache-control': 'private, no-store' });
 	try {
 		return await getReview(locals.user.id, params.id);
 	} catch (e) {

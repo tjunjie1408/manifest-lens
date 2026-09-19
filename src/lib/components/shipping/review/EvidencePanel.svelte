@@ -29,11 +29,13 @@
 				>
 				<a
 					class="mb-3 inline-block text-xs text-primary underline"
+					target="_blank"
+					rel="noreferrer"
 					href={resolve(
 						`/shipping/${data.emailId}/attachment?path=${encodeURIComponent(document.path)}`
-					)}>Download original</a
+					)}>Open original in a new tab</a
 				>
-				<div class="max-h-80 space-y-3 overflow-auto">
+				<div class="max-h-[60vh] space-y-3 overflow-auto pr-2">
 					{#each document.rows as row, index (index)}<p class="text-xs leading-relaxed break-words">
 							<span class="block font-mono text-ink-muted">{row.location}</span>{row.text}
 						</p>{/each}

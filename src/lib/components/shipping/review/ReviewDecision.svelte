@@ -25,7 +25,7 @@
 				required
 				minlength="3"
 				maxlength="2000"
-				rows="2"
+				rows="4"
 				placeholder="What did you check or change?"></textarea></label
 		>
 		<div class="flex flex-wrap gap-2">

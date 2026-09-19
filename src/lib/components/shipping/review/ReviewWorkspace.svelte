@@ -7,6 +7,7 @@
 	import FieldComparison from './FieldComparison.svelte';
 	import ReviewDecision from './ReviewDecision.svelte';
 	import ReviewHistory from './ReviewHistory.svelte';
+	import ReviewHelp from './ReviewHelp.svelte';
 
 	import StatusBadge from '$lib/components/shipping/StatusBadge.svelte';
 	let { data, form }: { data: ReviewDetail; form?: { message: string } | null } = $props();
@@ -38,6 +39,7 @@
 		</div>
 	</header>
 	{#if form?.message}<p role="status" class="review-panel px-5 py-3 text-sm">{form.message}</p>{/if}
+	<ReviewHelp {data} />
 	<div class="review-workspace">
 		<EvidencePanel {data} />
 		<div class="min-w-0 space-y-6">

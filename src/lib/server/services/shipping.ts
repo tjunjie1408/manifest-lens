@@ -8,6 +8,7 @@ import { and, eq } from 'drizzle-orm';
 import { env } from '$env/dynamic/private';
 import { db } from '$lib/server/db';
 import { shippingReview } from '$lib/server/db/schema';
+import { attachmentMatchesHash } from '$lib/server/attachment-integrity';
 import {
 	auditSchema,
 	emailSchema,
@@ -248,7 +249,7 @@ export async function originalAttachment(ownerId: string, emailId: string, path:
 	if (!document || !/^attachments\/[a-zA-Z0-9_.-]+$/.test(path))
 		throw new ReviewError(404, 'Attachment not found.');
 	const bytes = await readFile(resolve('sdoc-hackathon-docker/data_v2', path));
-	if (createHash('sha256').update(bytes).digest('hex') !== document.sha256)
+	if (!attachmentMatchesHash(bytes, document.sha256, path))
 		throw new ReviewError(
 			409,
 			'The original file has changed and cannot be used to review this experiment.'

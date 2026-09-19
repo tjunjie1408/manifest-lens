@@ -6,6 +6,7 @@ import {
 	summarizeCases,
 	filterCases
 } from '$lib/shipping/evidence-map';
+import { reviewReasonGuidance } from '$lib/shipping/presentation';
 const audit: Audit = {
 	subject: 'Example',
 	category: 'BL_COMPARISON',
@@ -73,6 +74,20 @@ describe('evidence map projection', () => {
 		expect(filterCases(rows, { query: '', category: 'all', bucket: 'missing' })).toHaveLength(
 			summary.missing
 		);
+	});
+});
+
+describe('review reason guidance', () => {
+	it('explains why a missing document pair produces all unknown fields', () => {
+		const guidance = reviewReasonGuidance('missing_attachment', 1, 0);
+		expect(guidance?.title).toContain('valid SI and BL pair');
+		expect(guidance?.explanation).toContain('1 readable source document');
+		expect(guidance?.action).toContain('request more information');
+	});
+
+	it('distinguishes unreadable inputs from missing values', () => {
+		expect(reviewReasonGuidance('unreadable', 1, 2)?.title).toContain('could not be read');
+		expect(reviewReasonGuidance('missing_value', 2, 0)?.explanation).toContain('TBA');
 	});
 });
 
