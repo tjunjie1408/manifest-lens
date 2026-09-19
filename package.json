@@ -1,8 +1,11 @@
 {
-	"name": "hackathon-template",
+	"name": "averis-monash-hackathon",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -12,11 +15,16 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
+		"format:auth-schema": "prettier --write src/lib/server/db/auth.schema.ts",
 		"db:push": "drizzle-kit push",
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
 		"db:studio": "drizzle-kit studio",
-		"auth:schema": "auth generate --config src/lib/server/auth.ts --output src/lib/server/db/auth.schema.ts --yes"
+		"test": "vitest run",
+		"test:integration": "vitest run",
+		"test:watch": "vitest",
+		"auth:schema": "svelte-kit sync && auth generate --config src/lib/server/auth.ts --output src/lib/server/db/auth.schema.ts --yes",
+		"db:migrate:runtime": "node scripts/migrate.mjs"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
@@ -25,13 +33,12 @@
 		"@sveltejs/kit": "^2.63.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@tailwindcss/vite": "^4.3.0",
-		"@types/better-sqlite3": "^7.6.13",
 		"@types/node": "^24",
+		"@types/pg": "^8.11.10",
 		"auth": "^1.6.23",
 		"better-auth": "^1.6.23",
 		"bits-ui": "^2.19.2",
 		"drizzle-kit": "^0.31.10",
-		"drizzle-orm": "^0.45.2",
 		"eslint": "^10.4.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.19.0",
@@ -45,18 +52,20 @@
 		"tailwindcss": "^4.3.0",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.60.1",
-		"vite": "^8.0.16"
+		"vite": "^8.0.16",
+		"vitest": "^3.2.4"
 	},
 	"dependencies": {
 		"@fontsource-variable/geist": "^5.3.0",
 		"@fontsource-variable/jetbrains-mono": "^5.3.0",
 		"@lucide/svelte": "^1.46.0",
-		"better-sqlite3": "^13.0.2",
 		"clsx": "^2.1.1",
 		"mode-watcher": "^1.1.0",
+		"pg": "^8.13.1",
 		"sveltekit-superforms": "^2.30.2",
 		"tailwind-merge": "^3.7.0",
 		"tailwind-variants": "^3.3.1",
-		"zod": "^4.6.5"
+		"zod": "^4.6.5",
+		"drizzle-orm": "^0.45.2"
 	}
 }
