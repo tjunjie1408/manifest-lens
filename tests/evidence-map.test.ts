@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { fields, type Audit, type Event } from '$lib/schemas/shipping';
-import { projectEvidenceCase, summarizeCases, filterCases } from '$lib/shipping/evidence-map';
+import {
+	evidenceFieldState,
+	projectEvidenceCase,
+	summarizeCases,
+	filterCases
+} from '$lib/shipping/evidence-map';
 const audit: Audit = {
 	subject: 'Example',
 	category: 'BL_COMPARISON',
@@ -11,6 +16,24 @@ const audit: Audit = {
 	errors: []
 };
 describe('evidence map projection', () => {
+	it('requires source evidence on both sides before reporting a comparison outcome', () => {
+		const evidence = {
+			raw: ['Example'],
+			canonical: 'example',
+			issue: null,
+			evidence: [{ text: 'Example', location: 'line 1' }]
+		};
+		expect(
+			evidenceFieldState({ si: evidence, bl: evidence, outcome: 'match' }, 'BL_COMPARISON')
+		).toBe('match');
+		expect(
+			evidenceFieldState(
+				{ si: { ...evidence, evidence: [] }, bl: evidence, outcome: 'match' },
+				'BL_COMPARISON'
+			)
+		).toBe('unknown');
+	});
+
 	it('never turns unavailable comparison data into matching or not-applicable fields', () => {
 		const row = projectEvidenceCase('email_1', audit);
 		expect(Object.values(row.fields)).toEqual(fields.map(() => 'unknown'));

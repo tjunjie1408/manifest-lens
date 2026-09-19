@@ -2,15 +2,22 @@
 	import { page } from '$app/state';
 	import type { ReviewDetail } from '$lib/shipping/types';
 	import { fields, labels } from '$lib/schemas/shipping';
+	import { evidenceFieldState } from '$lib/shipping/evidence-map';
 	import { fieldGroups as groups } from '$lib/shipping/presentation';
 	import StatusBadge from '../StatusBadge.svelte';
 	let { data }: { data: Pick<ReviewDetail, 'input' | 'result'> } = $props();
+	const states = $derived(
+		Object.fromEntries(
+			fields.map((field) => [
+				field,
+				evidenceFieldState(data.result?.fields?.[field], data.input.category)
+			])
+		)
+	);
 	const counts = $derived({
-		match: fields.filter((f) => data.result?.fields?.[f]?.outcome === 'match').length,
-		mismatch: fields.filter((f) => data.result?.fields?.[f]?.outcome === 'mismatch').length,
-		unknown: fields.filter(
-			(f) => !data.result?.fields?.[f] || data.result.fields[f].outcome === 'unknown'
-		).length
+		match: fields.filter((field) => states[field] === 'match').length,
+		mismatch: fields.filter((field) => states[field] === 'mismatch').length,
+		unknown: fields.filter((field) => states[field] === 'unknown').length
 	});
 </script>
 
@@ -39,7 +46,7 @@
 				>
 					<div class="flex items-center justify-between gap-3 px-5 pt-4">
 						<h4 class="text-sm font-semibold">{labels[field]}</h4>
-						<StatusBadge value={data.result?.fields?.[field]?.outcome ?? 'unknown'} />
+						<StatusBadge value={states[field]} />
 					</div>
 					<div class="review-field-grid">
 						{#each ['si', 'bl'] as side (side)}{@const key = `${side}.${field}`}{@const entry =

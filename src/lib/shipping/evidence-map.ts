@@ -1,5 +1,23 @@
-import { fields, resultSchema, type Audit, type Event } from '$lib/schemas/shipping';
+import {
+	fields,
+	resultSchema,
+	type Audit,
+	type Comparison,
+	type Event
+} from '$lib/schemas/shipping';
 import type { EvidenceCase, FieldName, FieldState, WorkBucket } from './types';
+
+type FieldComparison = NonNullable<Comparison['fields']>[string];
+
+/** A comparison is only supported when both source documents provide evidence. */
+export function evidenceFieldState(
+	comparison: FieldComparison | undefined,
+	category: Audit['category']
+): FieldState {
+	if (category !== 'BL_COMPARISON') return 'not_applicable';
+	if (!comparison?.si.evidence.length || !comparison.bl.evidence.length) return 'unknown';
+	return comparison.outcome;
+}
 
 /** A case has exactly one work bucket; cell outcomes remain independent of sign-off. */
 function workBucket(row: Omit<EvidenceCase, 'bucket'>): WorkBucket {
@@ -24,13 +42,7 @@ export function projectEvidenceCase(id: string, audit: Audit, latest?: Event): E
 	const category = latest?.input.category ?? audit.category;
 	const fieldStates = {} as Record<FieldName, FieldState>;
 	for (const field of fields) {
-		const comparison = result?.fields?.[field];
-		fieldStates[field] =
-			category !== 'BL_COMPARISON'
-				? 'not_applicable'
-				: comparison && comparison.si.evidence.length && comparison.bl.evidence.length
-					? comparison.outcome
-					: 'unknown';
+		fieldStates[field] = evidenceFieldState(result?.fields?.[field], category);
 	}
 	const originalUncertain = Boolean(audit.classification.review_recommended);
 	const row: Omit<EvidenceCase, 'bucket'> = {
