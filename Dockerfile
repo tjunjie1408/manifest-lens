@@ -34,5 +34,5 @@ COPY sdoc-hackathon-docker/data_v2/attachments ./sdoc-hackathon-docker/data_v2/a
 USER app
 EXPOSE 3000
 HEALTHCHECK --interval=10s --timeout=6s --start-period=20s --retries=5 \
- CMD node -e "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
-CMD ["node", "build"]
+ CMD node -e "fetch('http://127.0.0.1:' + (process.env.PORT || 3000) + '/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+CMD ["/bin/sh", "-c", "node scripts/migrate.mjs && exec node build"]
