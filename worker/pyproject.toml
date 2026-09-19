@@ -1,0 +1,16 @@
+[project]
+name = "shipping-verification-worker"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "sentence-transformers>=5.6,<6",
+  "pypdf>=6,<7",
+  "openpyxl>=3.1,<4",
+]
+
+[dependency-groups]
+dev = ["pytest>=9,<10"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

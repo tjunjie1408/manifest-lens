@@ -1,0 +1,3601 @@
+[
+  {
+    "email_id": "email_001",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_001"
+  },
+  {
+    "email_id": "email_003",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_003"
+  },
+  {
+    "email_id": "email_004",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_004"
+  },
+  {
+    "email_id": "email_005",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_005"
+  },
+  {
+    "email_id": "email_006",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_006"
+  },
+  {
+    "email_id": "email_009",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_009"
+  },
+  {
+    "email_id": "email_013",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_013"
+  },
+  {
+    "email_id": "email_016",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_016"
+  },
+  {
+    "email_id": "email_018",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_018"
+  },
+  {
+    "email_id": "email_021",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_021"
+  },
+  {
+    "email_id": "email_025",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_025"
+  },
+  {
+    "email_id": "email_026",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_026"
+  },
+  {
+    "email_id": "email_031",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_031"
+  },
+  {
+    "email_id": "email_032",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_032"
+  },
+  {
+    "email_id": "email_034",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_034"
+  },
+  {
+    "email_id": "email_036",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_036"
+  },
+  {
+    "email_id": "email_038",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_038"
+  },
+  {
+    "email_id": "email_040",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_040"
+  },
+  {
+    "email_id": "email_043",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_043"
+  },
+  {
+    "email_id": "email_044",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_044"
+  },
+  {
+    "email_id": "email_046",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_046"
+  },
+  {
+    "email_id": "email_047",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_047"
+  },
+  {
+    "email_id": "email_049",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_049"
+  },
+  {
+    "email_id": "email_050",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_050"
+  },
+  {
+    "email_id": "email_051",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_051"
+  },
+  {
+    "email_id": "email_052",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_052"
+  },
+  {
+    "email_id": "email_055",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_055"
+  },
+  {
+    "email_id": "email_056",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_056"
+  },
+  {
+    "email_id": "email_058",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_058"
+  },
+  {
+    "email_id": "email_059",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_059"
+  },
+  {
+    "email_id": "email_061",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_061"
+  },
+  {
+    "email_id": "email_063",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_063"
+  },
+  {
+    "email_id": "email_064",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_064"
+  },
+  {
+    "email_id": "email_065",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_065"
+  },
+  {
+    "email_id": "email_066",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_066"
+  },
+  {
+    "email_id": "email_068",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_068"
+  },
+  {
+    "email_id": "email_071",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_071"
+  },
+  {
+    "email_id": "email_075",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_075"
+  },
+  {
+    "email_id": "email_076",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_076"
+  },
+  {
+    "email_id": "email_077",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_077"
+  },
+  {
+    "email_id": "email_080",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_080"
+  },
+  {
+    "email_id": "email_081",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_081"
+  },
+  {
+    "email_id": "email_082",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_082"
+  },
+  {
+    "email_id": "email_088",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_088"
+  },
+  {
+    "email_id": "email_090",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_090"
+  },
+  {
+    "email_id": "email_091",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_091"
+  },
+  {
+    "email_id": "email_092",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_092"
+  },
+  {
+    "email_id": "email_095",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_095"
+  },
+  {
+    "email_id": "email_096",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_096"
+  },
+  {
+    "email_id": "email_097",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_097"
+  },
+  {
+    "email_id": "email_098",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_098"
+  },
+  {
+    "email_id": "email_100",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_100"
+  },
+  {
+    "email_id": "email_105",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_105"
+  },
+  {
+    "email_id": "email_107",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_107"
+  },
+  {
+    "email_id": "email_109",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_109"
+  },
+  {
+    "email_id": "email_111",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_111"
+  },
+  {
+    "email_id": "email_113",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_113"
+  },
+  {
+    "email_id": "email_114",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_114"
+  },
+  {
+    "email_id": "email_116",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_116"
+  },
+  {
+    "email_id": "email_117",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_117"
+  },
+  {
+    "email_id": "email_118",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_118"
+  },
+  {
+    "email_id": "email_119",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_119"
+  },
+  {
+    "email_id": "email_121",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_121"
+  },
+  {
+    "email_id": "email_128",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_128"
+  },
+  {
+    "email_id": "email_129",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_129"
+  },
+  {
+    "email_id": "email_132",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_132"
+  },
+  {
+    "email_id": "email_133",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_133"
+  },
+  {
+    "email_id": "email_134",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_134"
+  },
+  {
+    "email_id": "email_136",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_136"
+  },
+  {
+    "email_id": "email_141",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_141"
+  },
+  {
+    "email_id": "email_142",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_142"
+  },
+  {
+    "email_id": "email_143",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_143"
+  },
+  {
+    "email_id": "email_144",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_144"
+  },
+  {
+    "email_id": "email_145",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_145"
+  },
+  {
+    "email_id": "email_146",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_146"
+  },
+  {
+    "email_id": "email_150",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_150"
+  },
+  {
+    "email_id": "email_152",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_152"
+  },
+  {
+    "email_id": "email_158",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_158"
+  },
+  {
+    "email_id": "email_159",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_159"
+  },
+  {
+    "email_id": "email_160",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_160"
+  },
+  {
+    "email_id": "email_161",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_161"
+  },
+  {
+    "email_id": "email_167",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_167"
+  },
+  {
+    "email_id": "email_171",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_171"
+  },
+  {
+    "email_id": "email_174",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_174"
+  },
+  {
+    "email_id": "email_175",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_175"
+  },
+  {
+    "email_id": "email_176",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_176"
+  },
+  {
+    "email_id": "email_178",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_178"
+  },
+  {
+    "email_id": "email_180",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_180"
+  },
+  {
+    "email_id": "email_182",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_182"
+  },
+  {
+    "email_id": "email_184",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_184"
+  },
+  {
+    "email_id": "email_186",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_186"
+  },
+  {
+    "email_id": "email_187",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_187"
+  },
+  {
+    "email_id": "email_188",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_188"
+  },
+  {
+    "email_id": "email_189",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_189"
+  },
+  {
+    "email_id": "email_190",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_190"
+  },
+  {
+    "email_id": "email_195",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_195"
+  },
+  {
+    "email_id": "email_197",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_197"
+  },
+  {
+    "email_id": "email_198",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_198"
+  },
+  {
+    "email_id": "email_199",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_199"
+  },
+  {
+    "email_id": "email_207",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_207"
+  },
+  {
+    "email_id": "email_208",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_208"
+  },
+  {
+    "email_id": "email_210",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_210"
+  },
+  {
+    "email_id": "email_220",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_220"
+  },
+  {
+    "email_id": "email_222",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_222"
+  },
+  {
+    "email_id": "email_223",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_223"
+  },
+  {
+    "email_id": "email_225",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_225"
+  },
+  {
+    "email_id": "email_226",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_226"
+  },
+  {
+    "email_id": "email_227",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_227"
+  },
+  {
+    "email_id": "email_229",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_229"
+  },
+  {
+    "email_id": "email_230",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SI_REQUEST",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_230"
+  },
+  {
+    "email_id": "email_232",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_232"
+  },
+  {
+    "email_id": "email_235",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_235"
+  },
+  {
+    "email_id": "email_237",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_237"
+  },
+  {
+    "email_id": "email_239",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_239"
+  },
+  {
+    "email_id": "email_242",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_242"
+  },
+  {
+    "email_id": "email_243",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_243"
+  },
+  {
+    "email_id": "email_247",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_247"
+  },
+  {
+    "email_id": "email_249",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_249"
+  },
+  {
+    "email_id": "email_250",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_250"
+  },
+  {
+    "email_id": "email_256",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_256"
+  },
+  {
+    "email_id": "email_259",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_259"
+  },
+  {
+    "email_id": "email_261",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_261"
+  },
+  {
+    "email_id": "email_263",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_263"
+  },
+  {
+    "email_id": "email_265",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_265"
+  },
+  {
+    "email_id": "email_270",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_270"
+  },
+  {
+    "email_id": "email_271",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_271"
+  },
+  {
+    "email_id": "email_273",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_273"
+  },
+  {
+    "email_id": "email_275",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_275"
+  },
+  {
+    "email_id": "email_281",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_281"
+  },
+  {
+    "email_id": "email_282",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_282"
+  },
+  {
+    "email_id": "email_288",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_288"
+  },
+  {
+    "email_id": "email_291",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_291"
+  },
+  {
+    "email_id": "email_292",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_292"
+  },
+  {
+    "email_id": "email_296",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_296"
+  },
+  {
+    "email_id": "email_297",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_297"
+  },
+  {
+    "email_id": "email_299",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_299"
+  },
+  {
+    "email_id": "email_300",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_300"
+  },
+  {
+    "email_id": "email_301",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_301"
+  },
+  {
+    "email_id": "email_302",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_302"
+  },
+  {
+    "email_id": "email_305",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_305"
+  },
+  {
+    "email_id": "email_307",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_307"
+  },
+  {
+    "email_id": "email_309",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_309"
+  },
+  {
+    "email_id": "email_312",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_312"
+  },
+  {
+    "email_id": "email_313",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_313"
+  },
+  {
+    "email_id": "email_318",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_318"
+  },
+  {
+    "email_id": "email_319",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_319"
+  },
+  {
+    "email_id": "email_321",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_321"
+  },
+  {
+    "email_id": "email_323",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_323"
+  },
+  {
+    "email_id": "email_324",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_324"
+  },
+  {
+    "email_id": "email_326",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_326"
+  },
+  {
+    "email_id": "email_329",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_329"
+  },
+  {
+    "email_id": "email_333",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "GENERAL",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_333"
+  },
+  {
+    "email_id": "email_334",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_334"
+  },
+  {
+    "email_id": "email_335",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_335"
+  },
+  {
+    "email_id": "email_337",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_337"
+  },
+  {
+    "email_id": "email_340",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_340"
+  },
+  {
+    "email_id": "email_341",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_341"
+  },
+  {
+    "email_id": "email_342",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_342"
+  },
+  {
+    "email_id": "email_343",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_343"
+  },
+  {
+    "email_id": "email_345",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_345"
+  },
+  {
+    "email_id": "email_348",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_348"
+  },
+  {
+    "email_id": "email_349",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_349"
+  },
+  {
+    "email_id": "email_350",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_350"
+  },
+  {
+    "email_id": "email_351",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_351"
+  },
+  {
+    "email_id": "email_354",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_354"
+  },
+  {
+    "email_id": "email_361",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_361"
+  },
+  {
+    "email_id": "email_363",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_363"
+  },
+  {
+    "email_id": "email_364",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_364"
+  },
+  {
+    "email_id": "email_366",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_366"
+  },
+  {
+    "email_id": "email_367",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_367"
+  },
+  {
+    "email_id": "email_377",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_377"
+  },
+  {
+    "email_id": "email_378",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_378"
+  },
+  {
+    "email_id": "email_379",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_379"
+  },
+  {
+    "email_id": "email_381",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_381"
+  },
+  {
+    "email_id": "email_382",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_382"
+  },
+  {
+    "email_id": "email_383",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_383"
+  },
+  {
+    "email_id": "email_384",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_384"
+  },
+  {
+    "email_id": "email_385",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_385"
+  },
+  {
+    "email_id": "email_387",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_387"
+  },
+  {
+    "email_id": "email_390",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_390"
+  },
+  {
+    "email_id": "email_391",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_391"
+  },
+  {
+    "email_id": "email_394",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_394"
+  },
+  {
+    "email_id": "email_398",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_398"
+  },
+  {
+    "email_id": "email_399",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_399"
+  },
+  {
+    "email_id": "email_401",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_401"
+  },
+  {
+    "email_id": "email_404",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_404"
+  },
+  {
+    "email_id": "email_405",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_405"
+  },
+  {
+    "email_id": "email_407",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_407"
+  },
+  {
+    "email_id": "email_408",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_408"
+  },
+  {
+    "email_id": "email_409",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_409"
+  },
+  {
+    "email_id": "email_410",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_410"
+  },
+  {
+    "email_id": "email_411",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_411"
+  },
+  {
+    "email_id": "email_415",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "GENERAL",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_415"
+  },
+  {
+    "email_id": "email_416",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_416"
+  },
+  {
+    "email_id": "email_419",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_419"
+  },
+  {
+    "email_id": "email_421",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_421"
+  },
+  {
+    "email_id": "email_423",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_423"
+  },
+  {
+    "email_id": "email_424",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_424"
+  },
+  {
+    "email_id": "email_426",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_426"
+  },
+  {
+    "email_id": "email_428",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_428"
+  },
+  {
+    "email_id": "email_432",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_432"
+  },
+  {
+    "email_id": "email_434",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_434"
+  },
+  {
+    "email_id": "email_435",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_435"
+  },
+  {
+    "email_id": "email_436",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_436"
+  },
+  {
+    "email_id": "email_440",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_440"
+  },
+  {
+    "email_id": "email_441",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "INVOICE_QUERY",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_441"
+  },
+  {
+    "email_id": "email_442",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_442"
+  },
+  {
+    "email_id": "email_444",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_444"
+  },
+  {
+    "email_id": "email_446",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_446"
+  },
+  {
+    "email_id": "email_447",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_447"
+  },
+  {
+    "email_id": "email_448",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_448"
+  },
+  {
+    "email_id": "email_449",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_449"
+  },
+  {
+    "email_id": "email_451",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_451"
+  },
+  {
+    "email_id": "email_453",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_453"
+  },
+  {
+    "email_id": "email_454",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_454"
+  },
+  {
+    "email_id": "email_456",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_456"
+  },
+  {
+    "email_id": "email_459",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_459"
+  },
+  {
+    "email_id": "email_460",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "classification_uncertain",
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_460"
+  },
+  {
+    "email_id": "email_462",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_462"
+  },
+  {
+    "email_id": "email_465",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_465"
+  },
+  {
+    "email_id": "email_468",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_468"
+  },
+  {
+    "email_id": "email_470",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "SPAM",
+    "automated_status": "OK",
+    "reasons": [
+      "classification_uncertain"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_470"
+  },
+  {
+    "email_id": "email_474",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_474"
+  },
+  {
+    "email_id": "email_476",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_476"
+  },
+  {
+    "email_id": "email_479",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_479"
+  },
+  {
+    "email_id": "email_480",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_480"
+  },
+  {
+    "email_id": "email_481",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_481"
+  },
+  {
+    "email_id": "email_482",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_482"
+  },
+  {
+    "email_id": "email_483",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_483"
+  },
+  {
+    "email_id": "email_486",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_486"
+  },
+  {
+    "email_id": "email_491",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_491"
+  },
+  {
+    "email_id": "email_493",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_493"
+  },
+  {
+    "email_id": "email_494",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_494"
+  },
+  {
+    "email_id": "email_495",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_495"
+  },
+  {
+    "email_id": "email_496",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_496"
+  },
+  {
+    "email_id": "email_498",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "OK",
+    "reasons": [
+      "verify_automated_match"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_498"
+  },
+  {
+    "email_id": "email_499",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "MISMATCH",
+    "reasons": [
+      "confirm_discrepancies"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_499"
+  },
+  {
+    "email_id": "email_501",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "wrong_doc_type"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_501"
+  },
+  {
+    "email_id": "email_502",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "wrong_doc_type"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_502"
+  },
+  {
+    "email_id": "email_503",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "wrong_doc_type"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_503"
+  },
+  {
+    "email_id": "email_504",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "wrong_doc_type"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_504"
+  },
+  {
+    "email_id": "email_505",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "wrong_doc_type"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_505"
+  },
+  {
+    "email_id": "email_506",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_506"
+  },
+  {
+    "email_id": "email_507",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_507"
+  },
+  {
+    "email_id": "email_508",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_508"
+  },
+  {
+    "email_id": "email_509",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_509"
+  },
+  {
+    "email_id": "email_510",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_attachment"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_510"
+  },
+  {
+    "email_id": "email_511",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "unreadable"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_511"
+  },
+  {
+    "email_id": "email_512",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "unreadable"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_512"
+  },
+  {
+    "email_id": "email_513",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "unreadable"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_513"
+  },
+  {
+    "email_id": "email_514",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "unreadable"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_514"
+  },
+  {
+    "email_id": "email_515",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "unreadable"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_515"
+  },
+  {
+    "email_id": "email_516",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_516"
+  },
+  {
+    "email_id": "email_517",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_517"
+  },
+  {
+    "email_id": "email_518",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_518"
+  },
+  {
+    "email_id": "email_519",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_519"
+  },
+  {
+    "email_id": "email_520",
+    "review_state": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "policy_version": "experiment-human-signoff-v1",
+    "automated_category": "BL_COMPARISON",
+    "automated_status": "NEEDS_REVIEW",
+    "reasons": [
+      "missing_value"
+    ],
+    "evidence_file": "audit.json",
+    "evidence_key": "email_520"
+  }
+]

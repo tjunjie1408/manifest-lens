@@ -1,0 +1,9 @@
+# Migration files must stay byte-stable across platforms. Readiness keys applied
+# migrations by timestamp (not hash), but pinning LF avoids spurious diffs and
+# keeps Drizzle's generated hashes reproducible between Windows checkouts and
+# Linux CI, regardless of core.autocrlf.
+drizzle/**/*.sql text eol=lf
+drizzle/meta/*.json text eol=lf
+
+# Keep report fingerprints stable across Windows and Linux checkouts.
+worker/reports/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

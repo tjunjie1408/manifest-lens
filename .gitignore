@@ -23,3 +23,12 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 # SQLite
 *.db
+
+# Python runtime artifacts.
+/worker/.venv/
+/worker/**/__pycache__/
+/worker/.pytest_cache/
+/.uv-cache/
+
+# Local browser acceptance evidence (screenshots only).
+/.shipping-test-artifacts/

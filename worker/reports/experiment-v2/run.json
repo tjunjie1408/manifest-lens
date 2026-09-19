@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-09-18T13:44:43.928086+00:00",
+  "python": "3.12.13",
+  "emails": 520,
+  "pending_review": 257,
+  "upstream_commit": "fadf77b8db2943427bc46db471650c7f166f40bc",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "semantic_fallback_count": 37,
+  "duration_seconds": 50.95,
+  "categories": {
+    "BL_COMPARISON": 221,
+    "INVOICE_QUERY": 89,
+    "SI_REQUEST": 137,
+    "GENERAL": 32,
+    "SPAM": 41
+  },
+  "statuses": {
+    "OK": 358,
+    "NEEDS_REVIEW": 118,
+    "MISMATCH": 44
+  },
+  "review_reasons": {
+    "missing_attachment": 97,
+    "missing_value": 11,
+    "wrong_doc_type": 5,
+    "unreadable": 5
+  },
+  "evaluation_type": "exploratory supplied benchmark; not held-out generalization",
+  "submission_sha256": "bade94ffd7d9bc6953a10ed6e0135a3e5be493924d50d8dde79e225f4cd295cb",
+  "source_sha256": {
+    "shipping.py": "fea55e339749c97d61d5a3df0503ba801b31f4110f8ba40831c2064a6e51fdb5",
+    "documents.py": "040f2b6743de54b375b5dfaade7c7b9bfd38f4ab01a4ce902bb0075ee36f80d3",
+    "evaluate.py": "fc4ea490f6d962e29bc361617cd0df86941d6690e4aca8236a6b67b4ab5d3519",
+    "review.py": "b63f49405892096694da3c30d5b0aed0ec1547e4b04736881284779410f6cec6",
+    "semantic_matching/embeddings.py": "e6f93da059a4fa26040c7ff71542f1a52c9f47f3866797d7be714bd1d8258444",
+    "uv.lock": "60084daa762b73a0c33104ade580c5695ba84e57e5ab9fcf7b173e397f1eee2e"
+  },
+  "source_snapshot_note": "Package and classifier identifiers were normalized after evaluation; source_sha256 describes the renamed snapshot. Predictions and scores were not rerun."
+}
