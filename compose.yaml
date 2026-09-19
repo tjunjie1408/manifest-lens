@@ -48,5 +48,42 @@ services:
     restart: unless-stopped
     init: true
 
+  inbox:
+    profiles: ['evaluator']
+    build:
+      context: ./sdoc-hackathon-docker/server
+    environment:
+      DATA_DIR: /data
+      GROUND_TRUTH: /secrets/ground_truth.json
+      REVEAL_GT: '0'
+    ports:
+      - '127.0.0.1:8080:8000'
+    volumes:
+      - type: bind
+        source: ./sdoc-hackathon-docker/data_v2/inbox
+        target: /data/inbox
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./sdoc-hackathon-docker/data_v2/attachments
+        target: /data/attachments
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./sdoc-hackathon-docker/data_v2/sample_submission.json
+        target: /data/sample_submission.json
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./sdoc-hackathon-docker/data_v2/ground_truth.json
+        target: /secrets/ground_truth.json
+        read_only: true
+        bind:
+          create_host_path: false
+    restart: unless-stopped
+
 volumes:
   db-data:

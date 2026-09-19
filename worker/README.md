@@ -13,7 +13,7 @@ uv run --frozen python -X utf8 evaluate.py --output reports/my-run-001
 Start the supplied scorer first from the repository root:
 
 ```powershell
-docker compose -f sdoc-hackathon-docker/docker-compose.yml up -d
+docker compose --profile evaluator up --build -d --wait inbox
 ```
 
 The default model path is the local Hugging Face E5 snapshot shown in `evaluate.py`. Override with `--model-path PATH` for a complete local copy of the same revision. Missing model weights fail explicitly; this command does not download them. `--rules-only` is a diagnostic alternative and must use a distinct `--output` directory. Dependencies may need a one-time internet download during `uv sync`.

@@ -1,0 +1,108 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Type-check, lint, and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BETTER_AUTH_SECRET: ci-build-only-secret-at-least-32-chars
+      ORIGIN: http://localhost:3000
+      DATABASE_URL: postgres://build:build@localhost:5432/build
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run check
+      - run: npm run lint
+      - run: npm run build
+
+  integration:
+    name: PostgreSQL and Python tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      BETTER_AUTH_SECRET: ci-test-only-secret-at-least-32-chars
+      ORIGIN: http://localhost:3000
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/manifest_lens_test
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: manifest_lens_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d manifest_lens_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.8.22'
+          enable-cache: true
+          cache-dependency-glob: worker/uv.lock
+      - run: npm ci --ignore-scripts
+      - run: uv sync --frozen --project worker --python 3.12
+      - name: Generate SvelteKit types for integration tests
+        run: npx --no-install svelte-kit sync
+      - name: Python worker tests (no model downloads)
+        run: uv run --frozen --project worker python -m pytest worker/tests -q
+      - name: Prepare synthetic CI envelopes
+        run: node scripts/prepare-ci-inputs.mjs
+      - name: Apply migrations twice
+        run: |
+          npm run db:migrate:runtime
+          npm run db:migrate:runtime
+      - run: npm run test:integration
+
+  container:
+    name: Container build and readiness (CI fixtures)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prepare synthetic CI envelopes
+        run: node scripts/prepare-ci-inputs.mjs
+      # This image has no original attachments. Never publish it as a release.
+      - name: Build and start the complete stack
+        run: docker compose --profile app up --build -d --wait --wait-timeout 180
+      - name: Verify readiness and login page
+        run: |
+          curl --fail --retry 5 --retry-delay 2 http://127.0.0.1:3000/api/health
+          curl --fail --output "$RUNNER_TEMP/manifest-lens-login.html" http://127.0.0.1:3000/demo/better-auth/login
+          grep -q 'Manifest Lens' "$RUNNER_TEMP/manifest-lens-login.html"
+      - name: Show service logs on failure
+        if: failure()
+        run: docker compose --profile app logs --no-color --tail 150
+      - name: Stop the disposable CI stack
+        if: always()
+        run: docker compose --profile app down --volumes
