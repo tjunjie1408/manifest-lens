@@ -12,7 +12,7 @@ const artifacts = resolve(process.env.SHIPPING_TEST_ARTIFACTS || '.shipping-test
 await mkdir(artifacts, { recursive: true });
 assert(process.env.DATABASE_URL, 'DATABASE_URL is required for synthetic-account cleanup');
 assert(['127.0.0.1', 'localhost'].includes(new URL(process.env.DATABASE_URL).hostname));
-const browser = await chromium.launch({ headless: true, channel: 'msedge' });
+const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({
 	baseURL: base,
 	viewport: { width: 1440, height: 1100 }
