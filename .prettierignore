@@ -8,3 +8,9 @@ bun.lockb
 # Miscellaneous
 /static/
 /drizzle/
+
+
+
+# Isolated Python worker and generated evaluation artifacts.
+worker/
+.uv-cache/

@@ -6,7 +6,7 @@ import { APIError } from 'better-auth/api';
 
 export const load: PageServerLoad = (event) => {
 	if (event.locals.user) {
-		return redirect(302, '/demo/better-auth');
+		return redirect(302, '/shipping/overview');
 	}
 	return {};
 };
@@ -22,7 +22,7 @@ export const actions: Actions = {
 				body: {
 					email,
 					password,
-					callbackURL: '/auth/verification-success'
+					callbackURL: '/shipping/overview'
 				}
 			});
 		} catch (error) {
@@ -32,7 +32,7 @@ export const actions: Actions = {
 			return fail(500, { message: 'Unexpected error' });
 		}
 
-		return redirect(302, '/demo/better-auth');
+		return redirect(302, '/shipping/overview');
 	},
 	signUpEmail: async (event) => {
 		const formData = await event.request.formData();
@@ -46,7 +46,7 @@ export const actions: Actions = {
 					email,
 					password,
 					name,
-					callbackURL: '/auth/verification-success'
+					callbackURL: '/shipping/overview'
 				}
 			});
 		} catch (error) {
@@ -56,6 +56,6 @@ export const actions: Actions = {
 			return fail(500, { message: 'Unexpected error' });
 		}
 
-		return redirect(302, '/demo/better-auth');
+		return redirect(302, '/shipping/overview');
 	}
 };

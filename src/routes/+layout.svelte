@@ -1,7 +1,6 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import { page } from '$app/state';
 	import { resolve } from '$app/paths';
 	import { ModeWatcher, toggleMode } from 'mode-watcher';
 	import { Toaster } from '$lib/components/ui/sonner';
@@ -22,31 +21,19 @@
 <Tooltip.Provider>
 	<div class="min-h-screen">
 		<header class="sticky top-0 z-10 border-b border-divider bg-surface/90 backdrop-blur">
-			<div class="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-5">
+			<div
+				class="mx-auto flex min-h-14 max-w-6xl flex-wrap items-center justify-between gap-4 px-5"
+			>
 				<a
-					href={resolve('/')}
+					href={resolve('/shipping/overview')}
 					class="font-mono text-[13px] font-semibold tracking-tight text-primary"
 				>
-					◆ starter
+					Manifest Lens
 				</a>
 
-				<nav class="flex items-center gap-1 font-mono text-[12px]">
-					<a
-						href={resolve('/')}
-						class={navLink}
-						class:text-ink={page.url.pathname === '/'}
-						class:text-ink-muted={page.url.pathname !== '/'}
-					>
-						Home
-					</a>
-					<a
-						href={resolve('/components')}
-						class="{navLink} text-ink-muted"
-						class:text-ink={page.url.pathname === '/components'}
-					>
-						Components
-					</a>
-					<a href={resolve('/demo/better-auth')} class="{navLink} text-ink-muted">Auth demo</a>
+				<nav aria-label="Main navigation" class="font-mono text-[12px]">
+					<a href={resolve('/shipping/overview')} class={navLink}>Evidence map</a>
+					<a href={resolve('/shipping')} class={navLink}>Review queue</a>
 				</nav>
 
 				<div class="flex items-center gap-2 font-mono text-[12px]">
@@ -59,7 +46,7 @@
 						<MoonIcon class="hidden size-4 dark:block" />
 					</button>
 					{#if data.user}
-						<span class="text-ink-muted">{data.user.email}</span>
+						<span class="hidden max-w-48 truncate text-ink-muted md:inline">{data.user.email}</span>
 						<a href={resolve('/demo/better-auth')} class="{navLink} text-ink-muted">Account</a>
 					{:else}
 						<a
