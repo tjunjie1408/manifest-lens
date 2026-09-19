@@ -9,7 +9,9 @@ import { createTask, listTasks } from '$lib/server/services/tasks';
  * Auth is enforced with `locals.user`, populated in hooks.server.ts.
  */
 
-export const GET: RequestHandler = async () => {
+export const GET: RequestHandler = async ({ locals }) => {
+	if (!locals.user) throw error(401, 'Sign in to view tasks.');
+
 	return json(await listTasks());
 };
 
