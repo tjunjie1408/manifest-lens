@@ -133,6 +133,11 @@ try {
 	);
 	assert.equal(original.status(), 200);
 	assert.match(await original.text(), /SHIPPING INSTRUCTION/);
+	const pdf = await context.request.get(
+		'/shipping/email_059/attachment?path=attachments/email_059_SI.pdf'
+	);
+	assert.equal(pdf.status(), 200, await pdf.text());
+	assert.equal((await pdf.body()).subarray(0, 5).toString(), '%PDF-');
 	const traversal = await context.request.get('/shipping/email_001/attachment?path=../../.env');
 	assert.equal(traversal.status(), 404);
 	await page.evaluate(() => window.scrollTo(0, 0));

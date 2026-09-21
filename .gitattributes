@@ -5,5 +5,10 @@
 drizzle/**/*.sql text eol=lf
 drizzle/meta/*.json text eol=lf
 
+# Document attachments are binary evidence. Never let autocrlf rewrite their bytes.
+*.pdf binary
+*.docx binary
+*.xlsx binary
+
 # Keep report fingerprints stable across Windows and Linux checkouts.
 worker/reports/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

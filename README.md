@@ -32,7 +32,7 @@ Open **[Manifest Lens](http://127.0.0.1:3000/shipping/overview)**. On your first
 
 Compose starts PostgreSQL, applies the committed database migrations, and starts the application. Local demo defaults work without creating a `.env` file. Review history persists in the `db-data` volume.
 
-A clean clone of this GitHub repository contains everything required for the `app` profile above. The optional organizer evaluator described below is not required to run or judge Manifest Lens.
+A clean clone of this GitHub repository contains everything required for the standard Compose stack above. The optional organizer evaluator described below is not required to run or judge Manifest Lens.
 
 ### Optional: use the organizer's local scoring service
 
@@ -46,7 +46,7 @@ The website stays at `http://127.0.0.1:3000`; the organizer service is at `http:
 
 Organizer inputs are mounted read-only. The answer key is mounted separately into the scoring service and is not available to the web app; the answer-key endpoint is disabled. Keep this service local to evaluation rather than exposing it as the public website. Stop the combined stack with `docker compose --profile evaluator stop`.
 
-GitHub CI uses synthetic email envelopes to check integration and container startup without the untracked bundle. Those fixtures do not replace organizer inputs in a real demo or release image, and CI does not run the organizer scoring service.
+GitHub CI uses the committed synthetic demo inputs to check integration and container startup without the untracked organizer bundle. Those inputs do not replace organizer data in a real evaluation, and CI does not run the organizer scoring service.
 
 ### Try the demo
 
