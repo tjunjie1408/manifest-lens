@@ -9,6 +9,9 @@ bun.lockb
 /static/
 /drizzle/
 
+# Synthetic demo inputs are data fixtures, not formatted source files.
+/sdoc-hackathon-docker/data_v2/inbox/
+
 
 
 # Isolated Python worker and generated evaluation artifacts.

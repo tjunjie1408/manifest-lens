@@ -73,8 +73,6 @@ jobs:
         run: npx --no-install svelte-kit sync
       - name: Python worker tests (no model downloads)
         run: uv run --frozen --project worker python -m pytest worker/tests -q
-      - name: Prepare synthetic CI envelopes
-        run: node scripts/prepare-ci-inputs.mjs
       - name: Apply migrations twice
         run: |
           npm run db:migrate:runtime
@@ -90,9 +88,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Prepare synthetic CI envelopes
-        run: node scripts/prepare-ci-inputs.mjs
-      # This image has no original attachments. Never publish it as a release.
       - name: Build and start the complete stack
         run: docker compose up --build -d --wait --wait-timeout 180
       - name: Verify readiness and login page
