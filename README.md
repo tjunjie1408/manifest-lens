@@ -25,7 +25,7 @@ The supplied demo files must be present:
 - `worker/reports/experiment-v2/audit.json`
 
 ```sh
-docker compose --profile app up --build -d --wait
+docker compose up --build -d --wait
 ```
 
 Open **[Manifest Lens](http://127.0.0.1:3000/shipping/overview)**. On your first visit, register an account with a name, email, and password, then sign in.
@@ -39,12 +39,12 @@ A clean clone of this GitHub repository contains everything required for the `ap
 The participant repository does not include the organizer's private scoring server or answer key. If you separately have the complete organizer bundle, you can also start its HTTP inbox and evaluator from the same Compose project:
 
 ```sh
-docker compose --profile app --profile evaluator up --build -d --wait
+docker compose --profile evaluator up --build -d --wait
 ```
 
 The website stays at `http://127.0.0.1:3000`; the organizer service is at `http://127.0.0.1:8080` (`/health`, `/emails`, `/attachments/...`, and `/submit`). The `evaluator` profile requires the separately supplied organizer bundle, including `server/`, `sample_submission.json`, and `ground_truth.json`; it is expected to fail when those private files are absent from a clean participant clone.
 
-Organizer inputs are mounted read-only. The answer key is mounted separately into the scoring service and is not available to the web app; the answer-key endpoint is disabled. Keep this service local to evaluation rather than exposing it as the public website. Stop the combined stack with `docker compose --profile app --profile evaluator stop`.
+Organizer inputs are mounted read-only. The answer key is mounted separately into the scoring service and is not available to the web app; the answer-key endpoint is disabled. Keep this service local to evaluation rather than exposing it as the public website. Stop the combined stack with `docker compose --profile evaluator stop`.
 
 GitHub CI uses synthetic email envelopes to check integration and container startup without the untracked bundle. Those fixtures do not replace organizer inputs in a real demo or release image, and CI does not run the organizer scoring service.
 
@@ -58,9 +58,9 @@ GitHub CI uses synthetic email envelopes to check integration and container star
 ### Manage the containers
 
 ```sh
-docker compose --profile app ps -a       # Check service status
-docker compose logs app migrate         # Inspect application and migration logs
-docker compose --profile app stop       # Stop services; keep database data
+docker compose ps -a             # Check service status
+docker compose logs app migrate  # Inspect application and migration logs
+docker compose stop              # Stop services; keep database data
 ```
 
 The app and database should be `healthy`. The migration service normally shows `Exited (0)`. Readiness is available at `/api/health`.

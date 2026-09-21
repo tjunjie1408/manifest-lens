@@ -20,7 +20,6 @@ services:
       start_period: 10s
 
   migrate:
-    profiles: ['app']
     image: averis-shipping:local
     build: .
     command: ['node', 'scripts/migrate.mjs']
@@ -32,9 +31,9 @@ services:
     restart: 'no'
 
   app:
-    profiles: ['app']
     image: averis-shipping:local
     build: .
+    command: ['node', 'build']
     environment:
       DATABASE_URL: postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-averis}
       BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:-local-compose-only-secret-at-least-32-chars}
