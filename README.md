@@ -8,6 +8,12 @@ An Averis–Monash Hackathon prototype for comparing **Shipping Instructions (SI
 
 Built with SvelteKit, TypeScript, PostgreSQL, and Python. The demo runs locally without paid AI APIs or a hosted LLM.
 
+## How AI is used
+
+Email triage uses a hybrid classifier: explicit shipping rules handle clear cases, while a pinned `multilingual-e5-small` embedding model classifies messages that the rules cannot resolve. The tracked `worker/reports/experiment-v2/` run records the model revision, source hashes, all 520 predictions, 37 semantic fallback decisions, and the organizer scorer response. The web prototype consumes that frozen, auditable output so judges can inspect the evidence without downloading model weights.
+
+Document field extraction and SI-versus-BL comparison remain conservative and deterministic. Missing, unreadable, or ambiguous evidence is sent to human review instead of being guessed. Reproducing the batch AI run requires the separate locked worker environment and a local copy of the pinned model; the Docker web demo packages the frozen results and the lightweight human-correction runtime.
+
 ## Quick start: Docker
 
 **Requirements:** Docker Desktop / Docker Engine with Compose running. Run all commands from the repository root. The first build needs internet access to download images and dependencies; no host Node.js or Python installation is needed.
@@ -26,15 +32,17 @@ Open **[Manifest Lens](http://127.0.0.1:3000/shipping/overview)**. On your first
 
 Compose starts PostgreSQL, applies the committed database migrations, and starts the application. Local demo defaults work without creating a `.env` file. Review history persists in the `db-data` volume.
 
-### Include the organizer's data and scoring service
+A clean clone of this GitHub repository contains everything required for the `app` profile above. The optional organizer evaluator described below is not required to run or judge Manifest Lens.
 
-The app image already includes the supplied original inbox and attachments. To also start the organizer's HTTP inbox and evaluator from the same Compose project, run:
+### Optional: use the organizer's local scoring service
+
+The participant repository does not include the organizer's private scoring server or answer key. If you separately have the complete organizer bundle, you can also start its HTTP inbox and evaluator from the same Compose project:
 
 ```sh
 docker compose --profile app --profile evaluator up --build -d --wait
 ```
 
-The website stays at `http://127.0.0.1:3000`; the organizer service is at `http://127.0.0.1:8080` (`/health`, `/emails`, `/attachments/...`, and `/submit`). The `evaluator` profile requires the complete local organizer bundle, including `server/`, `sample_submission.json`, and `ground_truth.json`.
+The website stays at `http://127.0.0.1:3000`; the organizer service is at `http://127.0.0.1:8080` (`/health`, `/emails`, `/attachments/...`, and `/submit`). The `evaluator` profile requires the separately supplied organizer bundle, including `server/`, `sample_submission.json`, and `ground_truth.json`; it is expected to fail when those private files are absent from a clean participant clone.
 
 Organizer inputs are mounted read-only. The answer key is mounted separately into the scoring service and is not available to the web app; the answer-key endpoint is disabled. Keep this service local to evaluation rather than exposing it as the public website. Stop the combined stack with `docker compose --profile app --profile evaluator stop`.
 
@@ -130,6 +138,8 @@ See the [UI file guide](src/lib/components/shipping/README.md) for where to edit
 
 The website displays a frozen experiment over **520 synthetic emails** and their supporting attachments. It supports human corrections and rechecks; fresh mailbox ingestion, document uploads, and OCR are not implemented. Dashboard states describe available evidence and review progress, not calibrated model confidence or accuracy on real shipments.
 
-The Docker image includes the evidence files and Python comparison runtime, but excludes model weights and evaluator answer keys. Optional multilingual embedding experiments run separately through the worker.
+The Docker image includes the evidence files and Python comparison runtime, but excludes model weights and evaluator answer keys. The reproducible multilingual embedding pipeline runs through the locked worker environment and produces the tracked audit artifacts consumed by the web prototype.
 
-For cloud hosting, use a container service that supports Node.js, Python subprocesses, and the packaged evidence files, plus persistent PostgreSQL. Configure `DATABASE_URL`, a fresh `BETTER_AUTH_SECRET`, and the public HTTPS `ORIGIN`; run `node scripts/migrate.mjs` before starting `node build`. The current localhost Compose file needs adaptation for public hosting. An edge/serverless adapter is not a drop-in replacement.
+For cloud hosting, use a container service that supports Node.js, Python subprocesses, and the packaged evidence files, plus persistent PostgreSQL. Configure `DATABASE_URL`, a fresh `BETTER_AUTH_SECRET`, and the exact public HTTPS URL as `ORIGIN`; run `node scripts/migrate.mjs` before starting `node build`. The current localhost Compose file needs adaptation for public hosting. An edge/serverless adapter is not a drop-in replacement.
+
+For a Docker-based Render web service, deploy the repository's root `Dockerfile` and set the HTTP health-check path to `/api/health`. Render's free web services can spin down after inactivity, so the first visit may take longer while the service wakes. Open and verify the public URL shortly before judging, or use an instance type that does not spin down during the judging window.
